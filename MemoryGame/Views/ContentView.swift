@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = MemoryGameViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if(viewModel.showGame) {
+            return AnyView(GameView().environmentObject(viewModel))
+        }
+        else{
+            return AnyView(LobbyView().environmentObject(viewModel))
+        }
     }
 }
 
