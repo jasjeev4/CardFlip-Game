@@ -17,7 +17,7 @@ struct ManualView: View {
                     Text("Flip a pair of cards over and try to find a match.")
                         .padding([.leading, .trailing], 50)
                         .padding([.top, .bottom], 20)
-                    Text("Flip all the pairs of matching cardss to win!")
+                    Text("Flip all the pairs of matching cards to win!")
                         .padding([.leading, .trailing], 50)
                         .padding([.top, .bottom], 20)
                 }.padding(50)
